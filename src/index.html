@@ -70,6 +70,7 @@
                     </form>
                 </div>
 
+                <!-- ส่วนของเมนูบนเดสก์ท็อป -->
                 <div class="hidden md:flex items-center space-x-4">
                     <div class="relative">
                         <a href="#" class="text-gray-600 hover:text-gray-800">
@@ -77,14 +78,14 @@
                             <span class="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">0</span>
                         </a>
                     </div>
-                    <button class="bg-yellow-400 hover:bg-yellow-500 text-white px-4 py-2 rounded-md text-sm font-medium transition duration-300 flex items-center">
+                    <a href="login.html" class="bg-yellow-400 hover:bg-yellow-500 text-white px-4 py-2 rounded-md text-sm font-medium transition duration-300 flex items-center">
                         <i class="fas fa-user mr-2"></i>
                         เข้าสู่ระบบ
-                    </button>
-                    <button class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-md text-sm font-medium transition duration-300 flex items-center">
+                    </a>
+                    <a href="signup.html" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-md text-sm font-medium transition duration-300 flex items-center">
                         <i class="fas fa-clipboard-list mr-2"></i>
                         สมัครสมาชิก
-                    </button>
+                    </a>
                 </div>
 
                 <!-- ส่วนสำหรับมือถือ -->
@@ -196,24 +197,37 @@
                 <div id="mobile-category-menu" class="hidden mt-2">
                     <!-- เมนูย่อยแบบ Accordion -->
                     <div class="border-b border-gray-200">
-                        <button class="w-full flex justify-between items-center px-3 py-2 text-base text-gray-700 hover:bg-gray-50">
+                        <button class="mobile-subcategory-button w-full flex justify-between items-center px-3 py-2 text-base text-gray-700 hover:bg-gray-50">
                             โครงสร้าง
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            <svg class="w-4 h-4 transform transition-transform duration-150 ease-in-out" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                             </svg>
                         </button>
-                        <!-- เมนูย่อยของโครงสร้าง (ซ่อนไว้ก่อน) -->
+                        <div class="mobile-subcategory-menu hidden pl-6">
+                            <a href="#" class="block py-2 text-sm text-gray-600 hover:text-blue-500">ปูนซีเมนต์</a>
+                            <a href="#" class="block py-2 text-sm text-gray-600 hover:text-blue-500">เหล็กเส้น</a>
+                            <a href="#" class="block py-2 text-sm text-gray-600 hover:text-blue-500">อิฐบล็อก</a>
+                        </div>
                     </div>
                     <div class="border-b border-gray-200">
-                        <button class="w-full flex justify-between items-center px-3 py-2 text-base text-gray-700 hover:bg-gray-50">
+                        <button class="mobile-subcategory-button w-full flex justify-between items-center px-3 py-2 text-base text-gray-700 hover:bg-gray-50">
                             ฮาร์ดแวร์
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            <svg class="w-4 h-4 transform transition-transform duration-150 ease-in-out" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                             </svg>
                         </button>
-                        <!-- เมนูย่อยของโครงสร้าง (ซ่อนไว้ก่อน) -->
+                        <div class="mobile-subcategory-menu hidden pl-6">
+                            <a href="#" class="block py-2 text-sm text-gray-600 hover:text-blue-500">เครื่องมือช่าง</a>
+                            <a href="#" class="block py-2 text-sm text-gray-600 hover:text-blue-500">อุปกรณ์ล็อคและบานพับ</a>
+                            <a href="#" class="block py-2 text-sm text-gray-600 hover:text-blue-500">ตะปูและสกรู</a>
+                        </div>
                     </div>
-                    <!-- เพิ่มหมวดหมู่อื่นๆ ในลักษณะเดียวกัน -->
+                    <a href="#" class="block px-3 py-2 text-base text-gray-700 hover:bg-gray-50">วัสดุตกแต่งบ้าน</a>
+                    <a href="#" class="block px-3 py-2 text-base text-gray-700 hover:bg-gray-50">ระบบไฟฟ้าและระบบน้ำ</a>
+                    <a href="#" class="block px-3 py-2 text-base text-gray-700 hover:bg-gray-50">การเกษตร</a>
+                    <a href="#" class="block px-3 py-2 text-base text-gray-700 hover:bg-gray-50">เครื่องใช้ไฟฟ้า</a>
+                    <a href="#" class="block px-3 py-2 text-base text-gray-700 hover:bg-gray-50">อุปกรณ์สวน</a>
+                    <a href="#" class="block px-3 py-2 text-base text-gray-700 hover:bg-gray-50">สินค้าสั่งพิเศษ</a>
                 </div>
                 <a href="#"
                     class="block px-3 py-2 rounded-md text-lg font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">สินค้าตามแบรนด์</a>
@@ -221,14 +235,14 @@
                     class="block px-3 py-2 rounded-md text-lg font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">แคตตาล็อก</a>
                 <a href="#"
                     class="block px-3 py-2 rounded-md text-lg font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">บริการ</a>
-                <button class="w-full bg-blue-500 hover:bg-blue-600 text-white px-3 py-2 rounded-md text-lg font-medium transition duration-300 flex items-center justify-center">
+                <a href="login.html" class="w-full bg-blue-500 hover:bg-blue-600 text-white px-3 py-2 rounded-md text-lg font-medium transition duration-300 flex items-center justify-center">
                     <i class="fas fa-user mr-2"></i>
                     เข้าสู่ระบบ
-                </button>
-                <button class="w-full bg-green-500 hover:bg-green-600 text-white px-3 py-2 rounded-md text-lg font-medium transition duration-300 flex items-center justify-center">
+                </a>
+                <a href="signup.html" class="w-full bg-green-500 hover:bg-green-600 text-white px-3 py-2 rounded-md text-lg font-medium transition duration-300 flex items-center justify-center">
                     <i class="fas fa-clipboard-list mr-2"></i>
                     สมัครสมาชิก
-                </button>
+                </a>
             </div>
         </div>
     </header>
@@ -349,8 +363,6 @@
                         </div>
                     </div>
                 </a>
-
-
             </div>
         </div>
     </section>
@@ -477,7 +489,7 @@
     <section class="py-12 bg-blue-600 text-white">
         <div class="container mx-auto px-4">
             <div class="max-w-2xl mx-auto text-center">
-                <h2 class="text-3xl font-bold mb-4">รับข่าวสารและโปรโมชั่นก่อนใคร</h2>
+                <h2 class="text-3xl font-bold mb-4">รับข่าวสารและโปรโมชั่นก��อนใคร</h2>
                 <p class="mb-6">ลงทะเบียนรับจดหมายข่าวของเราเพื่อรับข้อเสนอพิเศษและเคล็ดลับการตกแต่ง
 
                 <script>
@@ -563,12 +575,12 @@
                     });
 
                     // เพิ่ม event listener สำหรับปุ่มหมวดหมู่ย่อย (Accordion)
-                    const subCategoryButtons = document.querySelectorAll('#mobile-category-menu > div > button');
+                    const subCategoryButtons = document.querySelectorAll('.mobile-subcategory-button');
                     subCategoryButtons.forEach(button => {
                         button.addEventListener('click', () => {
                             const subMenu = button.nextElementSibling;
                             subMenu.classList.toggle('hidden');
-                            button.querySelector('svg').classList.toggle('rotate-90');
+                            button.querySelector('svg').classList.toggle('rotate-180');
                         });
                     });
                 </script>    </section>
@@ -579,7 +591,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <!-- ข้อมูลบริษัท -->
                 <div>
-                    <h3 class="text-xl font-semibold mb-4">ดำรงค์โฮมพลัส</h3>
+                    <h3 class="text-xl font-semibold mb-4">ดำรงโฮมพลัส</h3>
                     <p class="mb-4">ศูนย์รวมวัสดุก่อสร้างและตกแต่งบ้านครบวงจร</p>
                     <div class="flex space-x-4">
                         <a href="#" class="text-white hover:text-blue-400">
